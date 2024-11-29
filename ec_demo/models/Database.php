@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-    private $host = 'mysql311.phy.lolipop.lan';
-    private $db_name = 'LAA1553851-ecdemo';
-    private $username = 'LAA1553851';
-    private $password = 'Pass0927';
+    private $host = '';
+    private $db_name = '';
+    private $username = '';
+    private $password = '';
     private $conn;
 
     // DB接続の作成
