@@ -12,7 +12,7 @@ class User
     {
         $stmt = $this->db->prepare("SELECT * FROM user WHERE user_ID=?");
         $stmt->execute([$user_ID]);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
     public function loginUser($mail, $password)

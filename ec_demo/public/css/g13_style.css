@@ -1,0 +1,82 @@
+main {
+    max-width: 600px;
+    margin: 1vh auto;
+    padding: 2rem;
+    text-align: left;
+}
+
+main h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+main form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+main form input,
+main form select,
+main form button {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-short {
+    width: calc(50% - 0.5rem);
+    display: inline-block;
+}
+
+main form select {
+    background-color: #fff;
+}
+
+main form button {
+    padding: 10px 20px;
+    background-color: red;
+    border: gold solid 2px;
+    border-radius: 1vw;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+main form button:hover {
+    background-color: #e1b20f;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group.inline {
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    margin-bottom: 0.5rem;
+}

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="チャーハンを専門的に販売するECサイトです。">
-    <link rel="stylesheet" type="text/css" href="./public/styles.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/g8_style.css">
     <title>博多★飯店 ホーム</title>
 </head>
 
@@ -15,98 +16,6 @@
         <header>
             <?php include "header.php" ?>
         </header>
-
-        <style>
-            img {
-                width: 100%;
-                height: auto;
-                display: block;
-                margin: 0 auto;
-            }
-
-            .commodity-info {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 20px;
-            }
-
-            .commodity-info img {
-                max-width: 400px;
-                margin-right: 20px;
-            }
-
-            .commodity-info .details {
-                flex: 1;
-                padding: 20px;
-                text-align: right;
-
-            }
-
-            .commodity-info .details h2 {
-                margin-top: 0;
-            }
-
-            .commodity-info .details p {
-                line-height: 1.6;
-            }
-
-            .actions form {
-                display: inline;
-            }
-
-            input[type="number"] {
-                padding: 8px;
-                margin: 1vw 0;
-                font-size: 16px;
-                width: 10vw;
-                height: 2vh;
-                background-color: gold;
-                border: 2px solid black;
-                border-radius: 1vw;
-            }
-
-            .actions button {
-                padding: 10px 20px;
-                background-color: red;
-                border: gold solid 2px;
-                border-radius: 1vw;
-                cursor: pointer;
-                color: #fff;
-                font-size: 16px;
-                display: inline;
-            }
-
-            .actions button:hover {
-                background-color: #e1b20f;
-            }
-
-            fieldset {
-                padding: 20px;
-                border-radius: 8px;
-                margin-top: 40px;
-                text-align: left;
-            }
-
-            .price {
-                font-size: 4vw;
-            }
-
-            .action form {
-                display: inline;
-            }
-
-            @media (max-width: 768px) {
-                .commodity-info {
-                    flex-direction: column;
-                    align-items: center;
-                }
-
-                .commodity-info img {
-                    max-width: 80%;
-                    margin-right: 0;
-                }
-            }
-        </style>
 
         <main>
             <div class="commodity-info">
@@ -128,15 +37,16 @@
                         <form id="addCartForm" action="./cart" method="post">
                             <input type="hidden" name="cm_ID" value="<?= htmlspecialchars($commodity['cm_ID'], ENT_QUOTES, 'UTF-8') ?>">
                             <input type="hidden" name="action" value="add">
-                            <input type="hidden" name="quantity" value="">
+                            <input type="hidden" name="quantity" value="1">
                             <button name="add_cart" value="true" onclick="setQuantity('addCartForm')">カートに追加</button>
                         </form>
 
                         <!-- すぐに購入するフォーム -->
                         <form id="buyNowForm" action="./buy" method="post">
-                            <input type="hidden" name="cm_ID" value="<?= htmlspecialchars($commodity['cm_ID'], ENT_QUOTES, 'UTF-8') ?>">
-                            <input type="hidden" name="quantity" value="">
+                            <input type="hidden" name="cm_IDs[]" value="<?= htmlspecialchars($commodity['cm_ID'], ENT_QUOTES, 'UTF-8') ?>">
+                            <input type="hidden" name="quantity" value="1">
                             <button name="now_buy" value="true" onclick="setQuantity('buyNowForm')">すぐに購入</button>
+
                         </form>
                     </div>
 
@@ -168,6 +78,7 @@
         <?php foreach ($commodities as $commodity): ?>
             <div class="commodity-card">
                 <form action="./detail" method="get">
+                    <input type="hidden" name="category" value="<?= htmlspecialchars($commodity['category'], ENT_QUOTES, 'UTF-8') ?>">
                     <button type="submit" name="cm_ID"
                         value="<?= htmlspecialchars($commodity['cm_ID'], ENT_QUOTES, 'UTF-8') ?>">
                         <img src="<?= htmlspecialchars($commodity['image'], ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars($commodity['cm_name'], ENT_QUOTES, 'UTF-8') ?>の画像">

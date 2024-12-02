@@ -1,0 +1,35 @@
+main {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0;
+}
+
+.space {
+    height: 20vh;
+}
+
+main button {
+    padding: 10px 20px;
+    background-color: red;
+    border: gold solid 2px;
+    border-radius: 1vw;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+main button:hover {
+    background-color: #e1b20f;
+}
+
+form:nth-of-type(1) {
+    margin-right: 5vw;
+}
+
+form {
+    display: inline;
+}

@@ -4,22 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./public/styles.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/g15_style.css">
     <title>博多☆飯店 情報変更完了</title>
-    <style>
-        main {
-            text-align: center;
-        }
-
-        main h1 {
-            text-align: center;
-            margin: 0 0;
-        }
-
-        .space {
-            height: 20vh;
-        }
-    </style>
 </head>
 
 <body>

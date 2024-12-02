@@ -73,7 +73,10 @@ class AuthController
     // ユーザー登録後、仮登録画面を表示
     public function userRegister()
     {
-        $this->UserModel->registerUser($_POST["name"], $_POST["mail"], $_POST["password"], $_POST["pay_info"], $_POST["address"]);
+        $name = $_POST['last_kanji'] . '/' . $_POST['first_kana'] . '/' . $_POST['last_kana'] . '/' . $_POST['first_kana'];
+        $address = ['prefectures'] . '/' . $_POST['municipality'] . '/' . $_POST['address_below'];
+
+        $this->UserModel->registerUser($name, $_POST["mail"], $_POST["password"], $_POST["pay_info"], $address);
         require './views/g3_email_verification.php';
     }
 }

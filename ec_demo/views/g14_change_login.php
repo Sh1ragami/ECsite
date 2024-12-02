@@ -4,71 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./public/styles.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/g14_style.css">
     <title>博多☆飯店 ログイン情報変更画面</title>
-    <style>
-        /* メインコンテナ */
-        main {
-            margin: 10vh auto;
-            height: 70vh;
-            width: 60vw;
-            text-align: center;
-        }
-
-        /* ボタン */
-        main button {
-            height: 5vh;
-            width: 10vw;
-            background-color: #ff0000;
-            border: 2px solid #d4af37;
-            border-radius: 0.5vw;
-            font-size: 1.5vw;
-            margin: 3vw;
-            color: white;
-        }
-        main h1 {
-            text-align: center;
-            margin: 0 0;
-        }
-
-
-        main form input {
-            padding: 0 1vw;
-            margin: 3vh;
-            height: 5vh;
-            width: 25vw;
-            border: gray solid 2px;
-            border-radius: 0.5vw;
-        }
-
-        main form input[type="password"] {
-            margin: 1vh
-        }
-
-        .back-link {
-            display: block;
-            margin: 1vw;
-            margin-bottom: 0;
-            text-align: left;
-        }
-
-        .register-link {
-            display: block;
-        }
-
-        /* メディアクエリ */
-        @media screen and (max-width: 786px) {
-            .registration-container {}
-        }
-
-        @media screen and (max-width: 480px) {
-            .registration-container {
-                width: 77%;
-                left: 0;
-                margin: 0 auto;
-            }
-        }
-    </style>
 </head>
 
 <body>

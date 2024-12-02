@@ -1,0 +1,89 @@
+ img {
+     width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+ }
+
+ .commodity-info {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 20px;
+ }
+
+ .commodity-info img {
+     max-width: 400px;
+     margin-right: 20px;
+ }
+
+ .commodity-info .details {
+     flex: 1;
+     padding: 20px;
+     text-align: right;
+
+ }
+
+ .commodity-info .details h2 {
+     margin-top: 0;
+ }
+
+ .commodity-info .details p {
+     line-height: 1.6;
+ }
+
+ .actions form {
+     display: inline;
+ }
+
+ input[type="number"] {
+     padding: 8px;
+     margin: 1vw 0;
+     font-size: 16px;
+     width: 10vw;
+     height: 2vh;
+     background-color: gold;
+     border: 2px solid black;
+     border-radius: 1vw;
+ }
+
+ .actions button {
+     padding: 10px 20px;
+     background-color: red;
+     border: gold solid 2px;
+     border-radius: 1vw;
+     cursor: pointer;
+     color: #fff;
+     font-size: 16px;
+     display: inline;
+ }
+
+ .actions button:hover {
+     background-color: #e1b20f;
+ }
+
+ fieldset {
+     padding: 20px;
+     border-radius: 8px;
+     margin-top: 40px;
+     text-align: left;
+ }
+
+ .price {
+     font-size: 4vw;
+ }
+
+ .action form {
+     display: inline;
+ }
+
+ @media (max-width: 768px) {
+     .commodity-info {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .commodity-info img {
+         max-width: 80%;
+         margin-right: 0;
+     }
+ }

@@ -4,41 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./public/styles.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/g12_style.css">
     <title>Document</title>
-    <style>
-        main {
-            text-align: center;
-        }
-
-        main h1 {
-            font-size: 50px;
-            text-align: center;
-            margin: 0 0;
-        }
-
-        .space {
-            height: 20vh;
-        }
-
-        main button {
-            padding: 10px 20px;
-            background-color: red;
-            border: gold solid 2px;
-            border-radius: 1vw;
-            cursor: pointer;
-            color: #fff;
-            font-size: 16px;
-        }
-
-        main button:hover {
-            background-color: #e1b20f;
-        }
-
-        form:nth-of-type(1) {
-            margin-right: 5vw;
-        }
-    </style>
 </head>
 
 <body>
