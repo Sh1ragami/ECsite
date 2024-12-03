@@ -26,10 +26,33 @@ main button:hover {
     background-color: #e1b20f;
 }
 
-form:nth-of-type(1) {
-    margin-right: 5vw;
-}
-
 form {
     display: inline;
+}
+
+.product-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.product-info {
+    flex: 1;
+    text-align: left;
+}
+
+.product-info p {
+    margin: 5px 0;
 }

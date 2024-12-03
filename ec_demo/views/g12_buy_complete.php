@@ -19,10 +19,24 @@
             <div class="space"></div>
 
             <h1>購入が完了しました</h1>
+            <?php if (empty($commodities)): ?>
+            <?php else: ?>
+                <?php foreach ($commodities as $item): ?>
+                    <div class="product-card">
+                        <img src="<?= htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8') ?>" alt="商品画像">
+                        <div class="product-info">
+                            <p><strong>
+                                    <?= htmlspecialchars($item['cm_name'], ENT_QUOTES, 'UTF-8') ?>
+                                </strong></p>
+                            <p>価格:
+                                <?= htmlspecialchars($item['price'], ENT_QUOTES, 'UTF-8') ?>円
+                            </p>
+                        </div>
+
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
             <div class="space"></div>
-            <form action="./cart">
-                <button>カートに戻る</button>
-            </form>
             <form action="./home">
                 <button>ホームに戻る</button>
             </form>

@@ -16,7 +16,7 @@
         </header>
         <main>
             <h1>情報変更</h1>
-            <form action="./verification" method="post">
+            <form action="./change" method="post">
                 <!-- Hidden inputs -->
                 <input type="hidden" name="mail"
                     value="<?php echo htmlspecialchars($user['mail'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">

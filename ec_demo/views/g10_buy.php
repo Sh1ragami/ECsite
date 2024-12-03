@@ -42,25 +42,25 @@
                 <div class="double_row">
                     <input type="text" name="last_kanji"
                         value="<?= htmlspecialchars($is_logged_in ? $name[0] : '', ENT_QUOTES, 'UTF-8') ?>"
-                        placeholder="姓 (漢字)">
+                        placeholder="姓 (漢字)" required>
                     <input type="text" name="first_kanji"
                         value="<?= htmlspecialchars($is_logged_in ? $name[1] : '', ENT_QUOTES, 'UTF-8') ?>"
-                        placeholder="名 (漢字)">
+                        placeholder="名 (漢字)" required>
                 </div>
                 <div class="double_row">
                     <input type="text" name="last_kana"
                         value="<?= htmlspecialchars($is_logged_in ? $name[2] : '', ENT_QUOTES, 'UTF-8') ?>"
-                        placeholder="姓 (カナ)">
+                        placeholder="姓 (カナ)" required>
                     <input type="text" name="first_kana"
                         value="<?= htmlspecialchars($is_logged_in ? $name[3] : '', ENT_QUOTES, 'UTF-8') ?>"
-                        placeholder="名 (カナ)">
+                        placeholder="名 (カナ)" required>
                 </div>
                 <input type="text" name="prefectures"
                     value="<?= htmlspecialchars($is_logged_in ? $address[0] : '', ENT_QUOTES, 'UTF-8') ?>"
-                    placeholder="都道府県">
+                    placeholder="都道府県" required>
                 <input type="text" name="street_address"
                     value="<?= htmlspecialchars($is_logged_in ? $address[1] : '', ENT_QUOTES, 'UTF-8') ?>"
-                    placeholder="住所">
+                    placeholder="住所" required>
                 <input type="text" name="mansion"
                     value="<?= htmlspecialchars($is_logged_in ? $mansion[2] : '', ENT_QUOTES, 'UTF-8') ?>"
                     placeholder="マンション名・部屋番号 (任意)">

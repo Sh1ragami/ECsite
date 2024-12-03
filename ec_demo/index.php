@@ -27,12 +27,12 @@ $router->addRoute('GET', '/detail', 'DetailController@showDetailPage'); // 商�
 $router->addRoute('GET', '/search', 'SearchController@showSearchPage'); // 検索結果ページ
 $router->addRoute('GET', '/cart', 'CartController@showCartPage'); // カートページ
 $router->addRoute('POST', '/cart', 'CartController@actionCart'); // カート追加処理
-$router->addRoute('POST', '/buy', 'BuyController@showBuyPage');
-$router->addRoute('POST', '/check', 'BuyController@showBuyCheckPage');
-$router->addRoute('POST', '/complete', 'BuyController@showCompletePage');
-$router->addRoute('GET', '/my', 'MyPageController@showMyPage');
-$router->addRoute('GET', '/change', 'AuthController@showChangePage');
-$router->addRoute('POST', '/change', 'AuthController@changeLoginInfo');
+$router->addRoute('POST', '/buy', 'BuyController@showBuyPage'); //購入確認ページ
+$router->addRoute('POST', '/check', 'BuyController@showBuyCheckPage'); //購入確認ページ
+$router->addRoute('POST', '/complete', 'BuyController@showCompletePage'); //購入完了ページ
+$router->addRoute('GET', '/my', 'MyPageController@showMyPage'); //マイページ
+$router->addRoute('GET', '/change', 'AuthController@showChangePage'); //ログイン情報変更ページ
+$router->addRoute('POST', '/change', 'AuthController@changeLoginInfo'); //ログイン情報変更処理
 
 // リクエスト処理
 $router->handleRequest();

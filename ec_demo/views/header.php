@@ -21,7 +21,7 @@
 
     <!-- サイドバーの内容 -->
     <form action="./change" method="get">
-        <button>ユーザー情報変更</button><br>
+        <button>ログイン情報変更</button><br>
     </form>
     <form action="./my" method="get">
         <button>マイページ</button><br>

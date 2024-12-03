@@ -55,6 +55,15 @@ class BuyController
 
     public function showCompletePage()
     {
+        $this->CartModel->deleteAllToCart($_SESSION['user_ID']);
+
+        // POSTデータから商品IDリストを取得
+        $cm_IDs = $_POST['cm_IDs'] ?? [];
+        if (empty($cm_IDs)) {
+            echo '商品が選択されていません。';
+            exit;
+        }
+        $commodities = $this->CommodityModel->getCommoditiesByIDs($cm_IDs);
         require './views/g12_buy_complete.php';
     }
 }
