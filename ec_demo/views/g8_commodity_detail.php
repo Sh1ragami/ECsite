@@ -7,7 +7,7 @@
     <meta name="description" content="チャーハンを専門的に販売するECサイトです。">
     <link rel="stylesheet" type="text/css" href="./public/css/style.css">
     <link rel="stylesheet" type="text/css" href="./public/css/g8_style.css">
-    <title>博多★飯店 ホーム</title>
+    <title>博多★飯店 商品詳細</title>
 </head>
 
 <body>

@@ -45,7 +45,7 @@ class AuthController
             $_SESSION['user_ID'] = $user['user_ID'];
             header('Location: ./');
         } else {
-            echo 'ログインに失敗しました。';
+            $message = 'ログインに失敗しました。';
             require './views/g6_login.php';
         }
     }

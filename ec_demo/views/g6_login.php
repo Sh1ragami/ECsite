@@ -21,6 +21,7 @@
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="有効なメールアドレスを入力してください" required><br>
                 <input type="password" name="password" placeholder="パスワード" required><br>
                 <button>ログイン</button>
+                <p style="color: red; font-weight: bold;"><?= $message ?></p>
             </form>
             <a href="./register" class="register-link">新規登録はこちらから</a>
         </div>

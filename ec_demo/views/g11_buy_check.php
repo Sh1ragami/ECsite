@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./public/css/style.css">
     <link rel="stylesheet" type="text/css" href="./public/css/g11_style.css">
-    <title>購入画面</title>
+    <title>博多★飯店 購入確認</title>
 </head>
 
 <body>
