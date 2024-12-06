@@ -1,0 +1,81 @@
+.form-container {
+    display: grid;
+    width: 79vw;
+    padding: 2vw;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn {
+    grid-column: 1 / -1;
+    padding: 12px 20px;
+    background-color: #F7D550;
+    color: black;
+    border: solid 1px black;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10vw;
+    margin-top: 14vh;
+    margin-left: 28vw;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #357a38;
+}
+
+.success-message,
+.error-message {
+    grid-column: 1 / -1;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.form-group input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+}
+
+.form-group input[type="number"]::-webkit-outer-spin-button,
+.form-group input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

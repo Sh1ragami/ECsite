@@ -41,6 +41,12 @@ class Cart
         $stmt->execute([$quantity, $user_ID, $cm_ID]);
     }
 
+    public function deleteToCart($user_ID, $cm_ID)
+    {
+        $stmt = $this->db->prepare("DELETE FROM cart WHERE user_ID=? AND cm_ID=?");
+        $stmt->execute([$user_ID, $cm_ID]);
+    }
+
     public function deleteAllToCart($user_ID)
     {
         $stmt = $this->db->prepare("DELETE FROM cart WHERE user_ID=?");

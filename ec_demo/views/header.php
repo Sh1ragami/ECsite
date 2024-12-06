@@ -5,7 +5,7 @@
     <div class="search-container">
         <form action="./search" method="get" class="search-form-1">
             <label>
-                <input type="search" placeholder="キーワードを入力" name="query">
+                <input type="search" placeholder="キーワードを入力" name="query" value="<?php echo htmlspecialchars($_GET['query'] ?? ''); ?>">
             </label>
             <button type="submit">検索</button>
         </form>

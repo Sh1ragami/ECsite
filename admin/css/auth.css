@@ -1,0 +1,22 @@
+  .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+  }
+
+  .content form input {
+      margin: 2vh 0;
+      height: 4vh;
+      width: 15vw;
+  }
+
+  .content form button {
+      margin: 3vh;
+      margin-left: 2.7vw;
+      height: 5vh;
+      width: 10vw;
+      background-color: #F7D550;
+      border: solid 1px grey;
+      border-radius: 0.9vw;
+  }
